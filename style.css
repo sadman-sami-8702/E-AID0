@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #f7b819;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: white;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: white;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+}
+.aboutsection{
+  background: #34ebdb;
+  height: 61vh;
+}
+.about{
+  background: #34ebdb;
+  font-size: 7.3vw;
+  color: black;
+  padding-top: 8%;
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
+}
+.connection{
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
+  font-size: 2vw;
+}
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  overflow: visible;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.buttonn{
+  margin-left: 36%;
+  margin-top: 5%;
+}
+.abouttitle{
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Zen Dots', cursive;
+}
+.descriptionn{
+  font-size: 2.5vw;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.containerTeam {
+  text-align: center;
+  color: black;
+  background-color: lawngreen;
+  padding-bottom: 1.5%;
+}
+
+.headingTeam {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+.apptitle {
+  background-color: #f75454;
+  text-align: center;
+  padding-top: 1.2%;
+  padding-bottom: 1.2%;
+  font-size: 3vw;
+  font-family: 'Zen Dots', cursive;
+}
+.descriptionapp{
+  text-align: center;
+  font-size: 2.4vw;
+  padding-top: 2%; 
+}
+.buttonapp{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonapp {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.buttonapp:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.buttonnapp{
+  margin-left: 36%;
+  margin-top: 2%;
+}
+.containerf{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #273036;
+    padding: 70px 0;
+    margin-top: -2%;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+@media (max-width:900px) {
+  .aboutsection{
+    height: 55vh;
+  }
+}
+@media (max-width:880px) {
+  .aboutsection{
+    height: 47vh;
+  }
+  .buttonn{
+    margin-top:4.1% ;
+  }
+}
+@media (max-width:810px) {
+  .aboutsection{
+    height: 45vh;
+  }
+  .buttonn{
+    margin-top:3.5% ;
+  }
+}
+@media (max-width:720px) {
+  .aboutsection{
+    height: 40vh;
+  }
+}
+@media (max-width:611px) {
+  .aboutsection{
+    height: 35vh;
+  }
+}
+.rickroll{
+  width: 80%; 
+  height: auto; 
+  margin-left: 8%; 
+  margin-right: 10%; 
+  margin-bottom: 2%;
+}
+.copy{
+  text-align: center; 
+  background-color:#273036 ; 
+  color: white; 
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+/*Mobile Based Responsive*/
+/*Moto G4*/
+@media (max-width:360px ) {
+  .about{
+    font-size: 12vw;
+  }  
+  .connection{
+    font-size: 3vw;
+  }
+  .button{
+    font-size: 3.7vw;
+  }
+  .buttonn{
+    margin-left: 10%;
+  }
+  .abouttitle{
+    font-size: 7vw;
+  }
+  .descriptionn{
+    font-size: 5.6vw;
+  }
+  .rickroll{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+  .apptitle{
+    font-size: 7vw;
+  }
+  .descriptionapp{
+    font-size: 5vw;
+  }
+  .buttonnapp{
+    margin-left: 25%;
+    margin-top: 6%;
+  }
+  .buttonapp{
+    font-size: 4vw;
+  }
+  .copy{
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
+/*Iphone-6-7-8*/
+@media (max-width: 414px) {
+  .about{
+    font-size: 12vw;
+  }  
+  .connection{
+    font-size: 3vw;
+  }
+  .button{
+    font-size: 3.7vw;
+  }
+  .buttonn{
+    margin-left: 31%;
+  }
+  .abouttitle{
+    font-size: 7vw;
+  }
+  .descriptionn{
+    font-size: 5.6vw;
+  }
+  .rickroll{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+  .apptitle{
+    font-size: 7vw;
+  }
+  .descriptionapp{
+    font-size: 5vw;
+  }
+  .buttonnapp{
+    margin-left: 25%;
+    margin-top: 6%;
+  }
+  .buttonapp{
+    font-size: 4vw;
+  }
+  .copy{
+    padding-top: 4%;
+    padding-bottom: 4%;
+  } 
+}
+@media (max-width: 768px) {
+  .about{
+    font-size: 12vw;
+  }  
+  .connection{
+    font-size: 3vw;
+  }
+  .button{
+    font-size: 3.7vw;
+  }
+  .buttonn{
+    margin-left: 35%;
+  }
+  .abouttitle{
+    font-size: 7vw;
+  }
+  .descriptionn{
+    font-size: 5.6vw;
+  }
+  .rickroll{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+  .apptitle{
+    font-size: 7vw;
+  }
+  .descriptionapp{
+    font-size: 5vw;
+  }
+  .buttonnapp{
+    margin-left: 30%;
+    margin-top: 6%;
+  }
+  .buttonapp{
+    font-size: 4vw;
+  }
+  .copy{
+    padding-top: 4%;
+    padding-bottom: 4%;
+  } 
+}
